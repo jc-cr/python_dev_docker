@@ -12,14 +12,14 @@ def plot_distribution(dist, params, name):
     plt.ylabel('Probability Density')
     plt.legend()
     plt.grid(True)
-    plt.savefig(f'/app/output/{name.lower().replace(" ", "_")}.png')
+    plt.savefig(f'/container_workspace/program_outputs/{name.lower().replace(" ", "_")}.png')
     plt.close()
 
 # Normal distribution
 plot_distribution(stats.norm, (), 'Normal')
 
 # Student's t-distribution
-plot_distribution(stats.t, (10,), 'Student t')
+plot_distribution(stats.t, (10,), 'T')
 
 # Chi-squared distribution
 plot_distribution(stats.chi2, (5,), 'Chi-squared')

@@ -1,6 +1,6 @@
 version: '3'
 services:
-  matplotlib:
-    build: .
+  python_plotting_script:
+    build: ./common_stat_distributions_figs
     volumes:
-      - ./output:/app/output
+      - ./program_outputs:/container_workspace/program_outputs
